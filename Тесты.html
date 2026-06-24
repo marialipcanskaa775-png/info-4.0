@@ -11,13 +11,13 @@
 
         @font-face {
             font-family: 'Jun';
-            src: url('ofont.ru_Jun.ttf') format('truetype');
+            src: url('fonts/ofont.ru_Jun.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
 
         .parallax {
-            background-image: url('Медиа/Фон_сайта!.jpg');
+            background-image: url('images/Фон_сайта!.jpg');
             height: 100vh;
             background-attachment: fixed;
             background-position: center;
@@ -59,7 +59,7 @@
 
         header {
             background-color: #66CDAA;
-            background-image: url('Медиа/Фон_сайта2.jpg');
+            background-image: url('images/Фон_сайта2.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -112,7 +112,7 @@
 
         footer {
             background-color: #66CDAA;
-            background-image: url('Медиа/Фон_сайта2.jpg');
+            background-image: url('images/Фон_сайта2.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -480,7 +480,7 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="Главная 2.0.html">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="Программа.html">Программа</a></li>
                     <li><a href="Темы.html">Темы учебных занятий</a></li>
                     <li><a href="Практика.html">Практические работы</a></li>
@@ -489,7 +489,7 @@
                 </ul>
 
                 <div class="nav-image">
-                    <img src="Медиа/Помощник.jpg" alt="Помощник">
+                    <img src="images/Помощник.jpg" alt="Помощник">
                 </div>
 
                 <div class="nav-search">
@@ -1594,15 +1594,15 @@
         const testId = buttonElement.getAttribute('data-test-id');
         
         const certMap = {
-            'test1': 'Медиа/Сертификат_Входной_контроль.png',
-            'test2': 'Медиа/Сертификат_Информация.png',
-            'test3': 'Медиа/Сертификат_MS_Word.png',
-            'test4': 'Медиа/Сертификат_Роль_ИТ.png',
-            'test_variant1': 'Медиа/Сертификат_Входной_контроль_часть2_вариант1.png',
-            'test_variant2': 'Медиа/Сертификат_Входной_контроль_часть2_вариант2.png'
+            'test1': 'images/Сертификат_Входной_контроль.png',
+            'test2': 'images/Сертификат_Информация.png',
+            'test3': 'images/Сертификат_MS_Word.png',
+            'test4': 'images/Сертификат_Роль_ИТ.png',
+            'test_variant1': 'images/Сертификат_Входной_контроль_часть2_вариант1.png',
+            'test_variant2': 'images/Сертификат_Входной_контроль_часть2_вариант2.png'
         };
         
-        const defaultCertPath = 'Медиа/Пример_сертификата.png';
+        const defaultCertPath = 'images/Пример_сертификата.png';
         
         if (percentage >= 80 && certMap[testId]) {
             resultHTML += `<a href="${certMap[testId]}" download="Сертификат.png" class="certificate-btn">Скачать сертификат</a>`;
@@ -1630,7 +1630,7 @@
     }
 
     const siteSearchIndex = {
-        'Главная 2.0.html': {
+        'index.html': {
             title: 'Главная страница',
             keywords: ['информатика', 'гуковский', 'гст', 'пособие', 'учебно-методическое', 'аннотация', 'цель', 'задачи', 'структура', 'информационные системы', 'программирование', 'дисциплина', 'студенты', 'обучение', 'образование', 'техникум', 'строительный'],
             description: 'Учебно-методическое пособие по информатике для студентов Гуковского строительного техникума'
